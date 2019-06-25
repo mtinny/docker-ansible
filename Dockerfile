@@ -4,6 +4,7 @@ RUN apt update -y \
   && apt install -y software-properties-common \
   && apt-add-repository ppa:ansible/ansible -y \
   && apt update -y \
+  && apt install -y git \
   && apt install -y ansible \
   && apt install -y python-pip \
   && pip install pexpect
